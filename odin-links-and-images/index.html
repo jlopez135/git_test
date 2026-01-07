@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links and Images</title>
+    </head>
+    <body>
+        <h1>Homepage</h1>
+
+        <!-- Opens link in the same tab -->
+        <p><a href="https://www.theodinproject.com/about">About The Odin Project</a></p>
+
+        <!-- Opens link in a new tab, rel attribute ensures a link opened in a new tab
+         cannot interact or access original page. Without it, the new page can use JavaScript
+         to manipulate the original page, which poses a security risk -->
+        <p><a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a></p>
+
+        <!-- Opens link but as a relative link, not absolute -->
+         <a href="./pages/about.html">About</a>
+
+        <!-- Displaying an image from a different site -->
+        <p><img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310"></p>
+
+        <!-- Displaying an image using a relative path -->
+         <p><img src="./images/dog.jpg"></p>
+    </body>
+</html>
